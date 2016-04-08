@@ -16,7 +16,7 @@ Write your script:
     my @items = qw(a b c);
     
     my $query = shift;
-    my $wf = Alfred::Wokflow->new();
+    my $wf = Alfred::Workflow->new();
     for (@items) {
         if (defined($query) && !/$query/) {
             next;
